@@ -9,7 +9,7 @@ from flask import Flask, jsonify
 import os
 
 # Database Setup and create an engine
-engine = create_engine(f"sqlite:///{os.getcwd()}/hawaii.sqlite")
+engine = create_engine(f"sqlite:///hawaii.sqlite")
 
 # Reflect an existing database into a model
 Base = automap_base()
